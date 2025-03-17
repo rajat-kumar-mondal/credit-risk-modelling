@@ -1,7 +1,6 @@
 import streamlit as st
 from prediction_helper import predict
 
-
 st.set_page_config(page_title="Credit Risk Predictor", page_icon="📈", layout="wide")
 st.title("Predict Your Credit Risk Now")
 st.markdown("#")
@@ -15,7 +14,7 @@ with rows[0][3]: loan_tenure_months = st.number_input('**Loan Tenure (months)**'
 
 loan_to_income_ratio = loan_amount / income if income > 0 else 0
 with rows[1][0]: st.number_input('**Loan to Income Ratio (Auto-Calculated, Read-Only)**', value=loan_to_income_ratio, format="%.2f", disabled=True)
-with rows[1][1]: avg_dpd_per_delinquency = st.number_input('**Avg DPD**', min_value=0, value=20)
+with rows[1][1]: avg_dpd_per_delinquency = st.number_input('**Avg DPD (Days Past Due)**', min_value=0, value=20)
 with rows[1][2]: delinquency_ratio = st.number_input('**Delinquency Ratio**', min_value=0, max_value=100, step=1, value=30)
 with rows[1][3]: credit_utilization_ratio = st.number_input('**Credit Utilization Ratio**', min_value=0, max_value=100, step=1, value=30)
 
