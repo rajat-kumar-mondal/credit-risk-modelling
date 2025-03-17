@@ -51,6 +51,27 @@ The project uses multiple datasets to analyze customer profiles and predict cred
 - **Bureau_data.csv**: Credit history from various sources
 - **Loans.csv**: Information on previous and current loans
 
+## 📦 Libraries & Packages
+The project utilizes the following key libraries:
+- **pandas** – Data manipulation and analysis  
+- **numpy** – Numerical computations  
+- **matplotlib.pyplot** – Data visualization  
+- **seaborn** – Statistical data visualization  
+- **optuna** – Hyperparameter optimization  
+- **scikit-learn**:
+  - `train_test_split` – Splitting data into training and testing sets  
+  - `MinMaxScaler` – Feature scaling  
+  - `LogisticRegression` – Classification model  
+  - `classification_report`, `f1_score`, `roc_curve`, `auc` – Model evaluation metrics  
+  - `RandomForestClassifier` – Ensemble learning model  
+  - `RandomizedSearchCV` – Hyperparameter tuning  
+- **statsmodels**:
+  - `variance_inflation_factor` – Detecting multicollinearity  
+- **xgboost** – Gradient boosting model  
+- **imblearn**:
+  - `RandomUnderSampler` – Handling imbalanced datasets  
+  - `SMOTETomek` – Hybrid oversampling and undersampling method  
+
 ## 🤖 Model Training & Evaluation
 The model is trained using supervised learning techniques with a focus on classification. The training process involves:
 1. **Data Preprocessing**: Handling missing values, encoding categorical features, and feature scaling.
