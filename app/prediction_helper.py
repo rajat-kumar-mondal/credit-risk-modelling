@@ -1,8 +1,11 @@
 import joblib
 import numpy as np
 import pandas as pd
+import os
 
-MODEL_PATH = r'.\artifacts\model_data.joblib'
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'artifacts', 'model_data.joblib')
+
+# MODEL_PATH = r'artifacts\model_data.joblib'
 
 model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
