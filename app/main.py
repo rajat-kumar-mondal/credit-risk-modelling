@@ -1,7 +1,7 @@
 import streamlit as st
 from prediction_helper import predict
 
-st.set_page_config(page_title="Credit Risk Predictor", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Credit Risk Modelling", page_icon="📈", layout="wide")
 st.title("Predict Your Credit Risk Now")
 st.markdown("#")
 
