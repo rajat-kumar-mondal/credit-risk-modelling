@@ -102,12 +102,12 @@ The models were assessed using:
 - **Cross-validation**: Ensured model robustness across different data splits.
 
 ## 📈 Model Performance
-The best-performing model achieved:
-- **Accuracy**: ~85%
-- **Precision**: ~82%
-- **Recall**: ~78%
-- **F1-Score**: ~80%
-- **ROC-AUC Score**: ~88%
+The best-performing model (XGBoost) achieved:
+- **Accuracy**: 93%
+- **Precision**: 78%
+- **Recall**: 94%
+- **F1-Score**: 83%
+- **ROC-AUC Score**: 98%
 
 The model provides a balanced assessment of credit risk, minimizing false positives and negatives effectively.
 
