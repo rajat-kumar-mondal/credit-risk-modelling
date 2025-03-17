@@ -2,7 +2,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-MODEL_PATH = r'..\artifacts\model_data.joblib'
+MODEL_PATH = r'.\artifacts\model_data.joblib'
 
 model_data = joblib.load(MODEL_PATH)
 model = model_data['model']
