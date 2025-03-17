@@ -74,15 +74,32 @@ The project utilizes the following key libraries:
 
 ## 🤖 Model Training & Evaluation
 The model is trained using supervised learning techniques with a focus on classification. The training process involves:
-1. **Data Preprocessing**: Handling missing values, encoding categorical features, and feature scaling.
-2. **Feature Engineering**: Deriving meaningful features from raw data to improve model accuracy.
-3. **Model Selection**: Training multiple models such as Logistic Regression, Random Forest, and Gradient Boosting.
-4. **Hyperparameter Tuning**: Optimizing model parameters using techniques like GridSearchCV.
-5. **Evaluation Metrics**:
-   - **Accuracy**: Measures overall correctness of predictions.
-   - **Precision & Recall**: Evaluates model performance in identifying high-risk customers.
-   - **F1-Score**: Balances precision and recall for better risk assessment.
-   - **ROC-AUC Score**: Assesses the trade-off between sensitivity and specificity.
+### 1️⃣ Data Preprocessing
+- Handling missing values through imputation strategies.
+- Encoding categorical variables using one-hot encoding.
+- Feature scaling with **MinMaxScaler**.
+- Removing multicollinearity using **Variance Inflation Factor (VIF)**.
+
+### 2️⃣ Class Balancing
+- Addressing dataset imbalance using **SMOTETomek** and **RandomUnderSampler**.
+
+### 3️⃣ Model Selection
+Three machine learning models were trained and compared:
+- **Logistic Regression**: A baseline model for classification.
+- **Random Forest Classifier**: An ensemble method improving prediction stability.
+- **XGBoost Classifier**: A gradient boosting method providing high accuracy.
+
+### 4️⃣ Hyperparameter Tuning
+- **Optuna** was used for optimizing hyperparameters efficiently.
+- **RandomizedSearchCV** was applied to refine model parameters.
+
+### 5️⃣ Model Evaluation
+The models were assessed using:
+- **Accuracy**: Overall correctness of predictions.
+- **Precision & Recall**: Trade-off between false positives and false negatives.
+- **F1-Score**: Harmonic mean of precision and recall.
+- **ROC-AUC Score**: Measures model discrimination ability.
+- **Cross-validation**: Ensured model robustness across different data splits.
 
 ## 📈 Model Performance
 The best-performing model achieved:
