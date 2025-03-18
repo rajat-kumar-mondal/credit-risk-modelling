@@ -55,8 +55,7 @@ The project uses multiple datasets, each containing 50K records, to analyze cust
 The project utilizes the following key libraries:
 - **pandas** – Data manipulation and analysis  
 - **numpy** – Numerical computations  
-- **matplotlib.pyplot** – Data visualization  
-- **seaborn** – Statistical data visualization  
+- **matplotlib.pyplot & seaborn** – Data visualization  
 - **optuna** – Hyperparameter optimization  
 - **scikit-learn**:
   - `train_test_split` – Splitting data into training and testing sets  
@@ -70,7 +69,10 @@ The project utilizes the following key libraries:
 - **xgboost** – Gradient boosting model  
 - **imblearn**:
   - `RandomUnderSampler` – Handling imbalanced datasets  
-  - `SMOTETomek` – Hybrid oversampling and undersampling method  
+  - `SMOTETomek` – Hybrid oversampling and undersampling method
+- **joblib**:
+  - `dump` – Store the models and scaler objects
+- **streamlit** - App user interface (UI)
 
 ## 🤖 Model Training & Evaluation
 The model is trained using supervised learning techniques with a focus on classification. The training process involves:
