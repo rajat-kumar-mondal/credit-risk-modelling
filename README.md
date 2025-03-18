@@ -47,9 +47,9 @@ streamlit run app/main.py
 
 ## 📊 Dataset
 The project uses multiple datasets, each containing 50K records, to analyze customer profiles and predict credit risk:
-- **Customers.csv**: Basic details of loan applicants
-- **Bureau_data.csv**: Credit history from various sources
-- **Loans.csv**: Information on previous and current loans
+- **customers.csv**: Basic details of loan applicants
+- **bureau_data.csv**: Credit history from various sources
+- **loans.csv**: Information on previous and current loans
 
 ## 📦 Libraries & Packages
 The project utilizes the following key libraries:
