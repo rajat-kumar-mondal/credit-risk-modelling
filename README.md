@@ -33,7 +33,7 @@ credit-risk-modelling/
 ## 🛠 Installation & Usage
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/credit-risk-modelling.git
+git clone https://github.com/rajat-kumar-mondal/credit-risk-modelling.git
 cd credit-risk-modelling
 ```
 ### 2️⃣ Install Dependencies
